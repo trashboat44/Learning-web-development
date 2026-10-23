@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#playing-cards {
+    background-color: #E2D4E4;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 150px;
+    min-height: 210px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-size: 2rem;
+}
+
+.spade {
+    font-size: 3.5rem;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    align-items: center;
+    font-size: 1.2rem;
+    transform: rotate(180deg);
+}
+
+.diamond, .hearts {
+    color: red;
+}
+
+.rotate-sign {
+    transform: rotate(180deg);
+}
+
+.middle-p {
+    display: flex;
+    flex-direction: row;
+}
+
+.mid {
+    display: flex;
+    justify-content: center;
+}

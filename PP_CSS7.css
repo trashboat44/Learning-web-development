@@ -1,0 +1,91 @@
+body {
+    background-color: #F2F2F2;
+}
+
+.main-container {
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: 450px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.sedan-container {
+    background-color: #E28625;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sedan-container .card-button {
+    color: #E28625;
+}
+
+.suv-container {
+    background-color: #006971;
+}
+
+.suv-container .card-button {
+    color: #006971;
+}
+
+.luxury-container {
+    background-color: #004140;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.luxury-container .card-button {
+    color: #004140;
+}
+
+.card {
+    flex: 1;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-title {
+    font-family: "Big Shoulders", sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.card-summary, .card-button {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+}
+
+.card-summary {
+    opacity: 0.75;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.card-title, .card-summary {
+    color: #FFFFFF;
+}
+
+.card-button {
+    background-color: #FFFFFF;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    padding: 13px 30px;
+    margin-top: auto;
+    font-weight: 600;
+}
+
+.material-symbols-outlined {
+    color: #FFFFFF;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.card-button:hover {
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}

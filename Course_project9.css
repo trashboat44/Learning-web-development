@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(lightblue 55%, green 45%);
+}
+
+#house {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    margin: 500px auto;
+    background-color: #ff9980;
+    border: 5px solid #b35900;
+}
+
+#chimney {
+    position: absolute;
+    top: -100px;
+    left: 300px;
+    width: 20%;
+    height: 30%;
+    z-index: -1;
+    background: repeating-linear-gradient(#fff, 10px, #fff 10px, #000 10px, #000 15px);
+    border: 4px solid #000;
+}
+
+.smoke {
+    position: absolute;
+    top: -20px;
+    left: 30px;
+    width: 35%;
+    height: 35%;
+    background-color: #000;
+    border-radius: 50%;
+    filter: blur(0.8rem);
+}
+
+#roof {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height:20%;
+    background: repeating-linear-gradient(45deg, #b35900, #b35900 2%, transparent 2%, transparent 5%), repeating-linear-gradient(-45deg, #b35900, #b35900 2%, #ff9980 2%, #ff9980 5%);
+}
+
+#window-1 {
+    display: flex;
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    width: 20%;
+    height: 25%;
+    background-color: #b35900;
+    padding: 4px;
+}
+
+.left-panel-lw, .right-panel-lw {
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    margin: 2px;
+}
+
+#window-2 {
+    display: flex;
+    position: absolute;
+    top: 130px;
+    left: 330px;
+    width: 20%;
+    height: 25%;
+    background-color: #b35900;
+    padding: 4px;
+}
+
+.left-panel-rw, .right-panel-rw {
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    margin: 2px;
+}
+
+#door {
+    display: flex;
+    justify-content: right;
+    padding-right: 10px;
+    position: absolute;
+    bottom: -5px;
+    left: 180px;
+    width: 25%;
+    height: 45%;
+    background: #fff;
+    border: 5px solid #b35900;
+}
+
+#roof, #window-1, #window-2 {
+    border: 2px;
+}
+
+.perilla {
+    display: block;
+    align-self: center;
+    width: 15%;
+    height: 10%;
+    background-color: #b35900;
+    border-radius: 50%;
+}
+
+#carpet {
+    position: absolute;
+    left: 171px;
+    bottom: -45px;
+    width: 25%;
+    height: 10%;
+    background-color: lightgreen;
+    border: 2px solid #000;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    font-family: sans-serif;
+    transform: skewX(-0.06turn);
+}

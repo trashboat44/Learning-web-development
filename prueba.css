@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    width: 150px;
+    height: 210px;
+    margin: 50px auto;
+    border: 1px solid black;
+    justify-content: center;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border: 1px solid black;
+}
+
+.second {
+    display: flex;
+    align-self: center;
+    gap: 0px;
+}
